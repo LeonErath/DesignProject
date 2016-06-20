@@ -256,12 +256,22 @@ public class LoginFragment extends Fragment {
                         .playOn(bindViews.findViewById(R.id.image));
 
 
+
+
                 edPassword.setText("");
                 edBenutzername.setText("");
 
-                edBenutzername.requestFocus();
-                InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.showSoftInput(edBenutzername, InputMethodManager.SHOW_IMPLICIT);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    public void run() {
+                        edBenutzername.requestFocus();
+                        InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                        imm.showSoftInput(edBenutzername, InputMethodManager.SHOW_IMPLICIT);
+
+                    }
+                }, 1200);
+
+
 
             }
 

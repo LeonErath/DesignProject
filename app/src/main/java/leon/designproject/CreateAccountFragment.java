@@ -73,44 +73,11 @@ public class CreateAccountFragment extends Fragment {
         views2 = new View[]{imageViewBack,imageViewCamera,imageViewUser,edUser,line1,imageViewLock,
                 edPassword,line2,imageViewGrade,edGrade,line3,imageViewEmail,edEmai,
                 line4,textViewSignUp,};
-        animateViews(view);
+
 
     }
 
-    private void animateViews(final View bindView) {
-        makeViewsInvisible();
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            int delay =0;
-            public void run() {
-                for (int i=0;i<views.length;i++){
-                    View v = views2[i];
-                    v.setVisibility(View.VISIBLE);
-                    YoYo.with(Techniques.Landing)
-                            .duration(500)
-                            .delay(delay)
-                            .playOn(bindView.findViewById(views[i]));
-                    delay += 150;
-                }
 
-            }
-        }, 600);
-
-    }
-
-    private void makeViewsInvisible() {
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                for (int i=0;i<views2.length;i++){
-                    Log.d("View: ",i+"");
-                    View v = views2[i];
-                    v.setVisibility(View.INVISIBLE);
-                }
-            }
-        }, 1);
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -38,7 +38,7 @@
 
 
             <LinearLayout
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -57,7 +57,7 @@
 
             <FrameLayout
                 android:layout_width="100dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginBottom="32dp"
                 android:layout_height="100dp">
 
@@ -79,7 +79,7 @@
             <LinearLayout
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="46dp"
                 android:layout_marginRight="46dp"
@@ -97,7 +97,7 @@
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/input_layout_password2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:fontFamily="sans-serif-light"
                     android:textColorHint="#73ffffff">
 
@@ -105,6 +105,7 @@
                         android:id="@+id/editUser"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="18dp"
                         android:layout_marginBottom="4dp"
                         android:layout_marginLeft="8dp"
                         android:background="#00000000"
@@ -122,13 +123,13 @@
                 android:layout_height="1dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginRight="60dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="-8dp"
                 android:alpha="0.75"
                 android:background="#ffffff"></RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="46dp"
                 android:layout_marginRight="46dp"
@@ -146,11 +147,12 @@
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/input_layout_password"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:fontFamily="sans-serif-light"
                     android:textColorHint="#73ffffff">
 
                     <EditText
+                        android:textSize="16dp"
                         android:id="@+id/editPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -178,7 +180,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="46dp"
@@ -198,11 +200,12 @@
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/input_layout_password3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:fontFamily="sans-serif-light"
                     android:textColorHint="#73ffffff">
 
                     <EditText
+                        android:textSize="16dp"
                         android:id="@+id/editGrade"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -230,7 +233,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="16dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="46dp"
@@ -250,11 +253,12 @@
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/input_layout_password4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:fontFamily="sans-serif-light"
                     android:textColorHint="#73ffffff">
 
                     <EditText
+                        android:textSize="16dp"
                         android:id="@+id/editEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
