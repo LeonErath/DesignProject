@@ -6,6 +6,7 @@ import android.annotation.TargetApi;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -207,6 +208,9 @@ public class LoginFragment extends Fragment {
 
                                 @Override
                                 public void onAnimationEnd(Animator animation) {
+                                    Intent intent = new Intent(getActivity(), AufgabenActivity.class);
+                                    startActivity(intent);
+                                    getActivity().finish();
 
                                 }
 
